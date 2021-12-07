@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 100vh;
+}
+.phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.phone img {
+  height: 50rem;
+}
+
+.container-login {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 50%;
+  min-height: 34rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  padding: 1.3rem 0;
+  border: 1px solid lightgray;
+}
+
+.card:nth-child(1) {
+  min-height: 19rem;
+}
+
+.logo-instagram {
+  height: 3rem;
+}
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile img {
+  height: 6rem;
+}
+
+.btn-login {
+  background-color: #0095f6;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+}
+.btn-logout {
+  color: #0095f6;
+  margin-top: 1rem;
+}
+
+.not-account {
+  color: rgb(160, 160, 160);
+}
+
+.link {
+  color: #0095f6;
+}
+
+.downloads {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.3rem 0;
+}
+
+.download {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 1rem;
+}
+.download-app {
+  height: 3rem;
+  width: 10rem;
+  background-size: cover;
+}
+.download-app:nth-child(1) {
+  background-image: url('./images/apple-button.png');
+}
+.download-app:nth-child(2) {
+  background-image: url('./images/googleplay-button.png');
+}
+
+/* media queries */
+
+@media (max-width: 1024px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  .wrapper {
+    width: 90%;
+  }
+  .phone {
+    display: none;
+  }
+  .container-login {
+    width: 100%;
+  }
+
+  .card {
+    border: 1px solid transparent;
+  }
+}
